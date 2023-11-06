@@ -6,6 +6,14 @@
         public string? Color { get; set; }
         public int NumberOfWheels { get; set; }
 
+        public void ValidateNumberOfWheels()
+        {
+            if (NumberOfWheels == 0)
+            {
+                throw new ArgumentOutOfRangeException("Number of wheels cannot be 0");
+            }
+        }
+
         public void ValidateColor()
         {
             if (Color == null)
