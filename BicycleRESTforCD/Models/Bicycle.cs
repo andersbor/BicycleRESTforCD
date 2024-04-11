@@ -4,7 +4,8 @@
     {
         public int Id { get; set; }
         public string? Color { get; set; }
-        public int NumberOfWheels { get; set; }
+        public int NumberOfWheels { get; set; } = 2;
+        public string? Model { get; set; }
 
         public void ValidateNumberOfWheels()
         {
