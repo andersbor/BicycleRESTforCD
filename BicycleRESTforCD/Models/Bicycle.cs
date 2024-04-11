@@ -6,6 +6,7 @@
         public string? Color { get; set; }
         public int NumberOfWheels { get; set; } = 2;
         public string? Model { get; set; }
+        public string? Mark { get; set; }
 
         public void ValidateNumberOfWheels()
         {

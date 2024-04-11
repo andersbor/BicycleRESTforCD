@@ -20,7 +20,7 @@ namespace BicycleRESTforCD.Models.Tests
         public void ValidateNumberOfWheelsTest()
         {
             Bicycle zeroWheels = new Bicycle { NumberOfWheels = 0 };
-            //zeroWheels.ValidateNumberOfWheels();
+            zeroWheels.ValidateNumberOfWheels();
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => zeroWheels.ValidateNumberOfWheels());
             Bicycle okWheels = new Bicycle { NumberOfWheels = 2 };
             okWheels.ValidateNumberOfWheels();
